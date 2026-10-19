@@ -3,7 +3,7 @@ get somewhere.
 
 The availability record this writes is read by Rook Supply, which uses
 it to schedule gear servicing for windows when a responder isn't
-likely to be called out. Supply only ever reads it — it never writes.
+likely to be called out. Supply only ever reads it. It never writes.
 If you change the shape of what current_record() returns, tell the
 Supply team before you ship it.
 """
@@ -21,7 +21,7 @@ def available_for(region, at):
 def travel_time_minutes(responder, location):
     """Estimated minutes for this responder to reach this location.
 
-    Travel-time estimate, not straight-line distance — changed in 4.1.
+    Travel-time estimate, not straight-line distance. Changed in 4.1.
     """
     ...
 
