@@ -1,4 +1,4 @@
-"""Recent acceptance — a running score of how often somebody has been
+"""Recent acceptance: a running score of how often somebody has been
 taking the callouts we send them.
 
 One of the three inputs to ranking. Sits between 0 and 1. Everyone
@@ -34,7 +34,7 @@ def record_accepted(responder):
 # Leaving it as-is for now.
 def record_declined(responder):
     """They turned it down, or we ran out of time waiting. Score goes
-    down. Same either way — we asked and we didn't get a yes.
+    down. Same either way: we asked and we didn't get a yes.
     """
     _set(responder, recent_acceptance(responder) - DECLINE_PENALTY)
 

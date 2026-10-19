@@ -1,6 +1,6 @@
-# Rook Industries — course working file
+# Rook Industries: course working file
 
-## Session scope — Product School lab
+## Session scope, Product School lab
 
 This directory is coursework for Product School's "Codex for PMs"
 certification. Everything in it is a fictional teaching scenario.
