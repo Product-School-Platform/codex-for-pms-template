@@ -21,10 +21,11 @@ The module folders are 01-origin-story (Module 1), 02-super-hearing (Module 2), 
 ## 2. Save the student's own prompts
 
 - Look back through this thread for the prompts the student wrote themselves. Leave out: the starter prompt each lab gives the whole room (the long, polished prompt the student pasted from a slide or the Zoom chat), "wrap up", "check my setup", "save my work", and short replies such as "yes", "ok" or "go ahead".
+- Module 5 Lab A has no starter prompt. The student writes the first brief prompt themselves, usually a long one that names the Director's request, Meteor Mite or the handover note. Keep it, however polished it looks, unless it starts with one of the lines below.
 - Also leave out any message that is, or starts with, one of the lines below. These are the slide starters and the stuck prompts the whole room is given. Saving them makes the graded prompt library look like the slides. A few words added at the end does not make one of these the student's own prompt.
   - What can you reach from here?
   - I just joined Rook Industries as PM for Rook Dispatch.
-  - What's contradictory or missing, not just in the company documents
+  - What's contradictory or missing between the Company section of Rook's wiki
   - Based on everything you now know about Rook, what should I be worried about
   - Group these, tell me how many are in each group
   - Read the four customer interviews in the Research section of Rook's wiki.
