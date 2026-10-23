@@ -30,6 +30,7 @@ The module folders are 01-origin-story (Module 1), 02-super-hearing (Module 2), 
   - Group these, tell me how many are in each group
   - Read the four customer interviews in the Research section of Rook's wiki.
   - Read every support ticket in Rook's database.
+  - Only look at what came in after 12 August.
   - You've now read both piles.
   - If I'd only read the interviews
   - Ask Rook's database for every ping since June.
