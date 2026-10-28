@@ -1,4 +1,4 @@
-Course setup instructions for Codex for PMs (setup v2.0). A student asked you to download and follow these. Speak to them in the first person as written below ("me" is the student). If anything in this setup fails and can't be fixed, tell the student to post in their course Slack channel: the step number, the exact error message, and whether they're on a Mac or Windows.
+Course setup instructions for Codex for PMs (setup v2.1). A student asked you to download and follow these. Speak to them in the first person as written below ("me" is the student). If anything in this setup fails and can't be fixed, tell the student to post in their course Slack channel: the step number, the exact error message, and whether they're on a Mac or Windows.
 I'm not technical, so before each step tell me in one or two plain sentences what you're about to do, and tell me exactly what to click whenever I need to do something myself.
 
 Rules for this whole setup:
