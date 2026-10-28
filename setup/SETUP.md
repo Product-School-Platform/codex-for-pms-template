@@ -7,6 +7,7 @@ Rules for this whole setup:
 - Work out whether this computer is a Mac or Windows first. On Windows your commands run in PowerShell: write them for PowerShell (use curl.exe, not curl), and set GIT_TERMINAL_PROMPT the PowerShell way.
 - Set GIT_TERMINAL_PROMPT=0 for every git command that talks to GitHub, so nothing freezes waiting for a password.
 - On Windows, run the course's bash scripts (step 5) with Git Bash's bash.exe, called by its full path: it's in the bin folder of the Git for Windows install, next to the cmd folder that holds git.exe (usually C:\Program Files\Git\bin\bash.exe). Never use C:\Windows\System32\bash.exe or a bare "bash": on Windows that can be a different program.
+- On Windows, Git Bash can't start inside your sandbox. Run every Git Bash command, and every git command that talks to GitHub (git uses Git Bash to reach the GitHub tool's sign-in), outside the sandbox on the first try: ask for approval straight away, never try it inside the sandbox first. If a command stops with "fatal error - NtCreateDirectoryObject(...): 0xC0000022" or "couldn't create signal pipe, Win32 error 5", it ran inside the sandbox. That isn't a real failure and doesn't count as a try: ask for approval and run the same command again outside the sandbox.
 - Never delete anything. If a file or folder is in the way, rename it with "-old" on the end and tell me.
 - If a step fails, try the fix listed for it. If that fails too, stop and tell me to post this in my course Slack channel: the step number, the exact error message, and whether I'm on a Mac or Windows.
 - It's safe to run this again. Skip any step that's already done.
@@ -53,8 +54,8 @@ Inside the course folder only (never change git's settings for the rest of my co
 - Set git user.name to my GitHub username and user.email to my private GitHub email from step 3, in the course folder's own git settings. This keeps my personal email address off my work.
 - With the course folder as the working folder, run the course's own script that connects this folder's git to the GitHub tool's sign-in and checks it:
     Mac: bash .agents/skills/course-setup/scripts/checkup.sh connect-git
-    Windows: the same script and argument, run with Git Bash's bash.exe by its full path (see the rules above).
-  It prints RESULT=connected when it works. If it prints RESULT=failed, try once more; if it fails again, use the Slack rule above with its ERROR line.
+    Windows: the same script and argument, run with Git Bash's bash.exe by its full path, outside the sandbox on the first try (see the rules above). Its justification can be "Connect your course folder to your GitHub sign-in?".
+  It prints RESULT=connected when it works. If it prints RESULT=failed, try once more; if it fails again, use the Slack rule above with its ERROR line. On Windows, if it prints the NtCreateDirectoryObject or signal pipe error from the rules above instead of a RESULT line, it ran inside the sandbox: run it again outside the sandbox before you count a try.
 
 Step 6: Finish.
 Show me this checklist, with a check mark or an X on each line:

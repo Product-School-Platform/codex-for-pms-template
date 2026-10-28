@@ -70,7 +70,10 @@ which your sandbox blocks. They print `KEY=value` lines for you to read.
   Windows install, next to the cmd folder that holds git.exe (usually
   `C:\Program Files\Git\bin\bash.exe`). Never use
   `C:\Windows\System32\bash.exe` or a bare `bash`. The rule above doesn't
-  cover this form, so ask for approval to run outside the sandbox. The
+  cover this form, so ask for approval to run outside the sandbox, on the
+  first try: Git Bash can't start inside your sandbox on Windows, so never
+  try it there first. The same goes for your own git commands that talk to
+  GitHub, because git uses Git Bash to reach the GitHub tool's sign-in. The
   student sees its justification, so make that a short plain question, such
   as "Check your course setup with GitHub?" or "Save your work to GitHub?".
 - **Any other case** where you can't use the Mac form (for example this thread
@@ -79,6 +82,11 @@ which your sandbox blocks. They print `KEY=value` lines for you to read.
 - If a script reports a network or sign-in failure and it ran inside the
   sandbox, that result doesn't count: run it again outside the sandbox before
   telling the student anything is wrong.
+- On Windows, `fatal error - NtCreateDirectoryObject(...): 0xC0000022` or
+  `couldn't create signal pipe, Win32 error 5`, with no `KEY=value` lines,
+  means Git Bash was started inside the sandbox and the script never ran.
+  That result doesn't count either: run it again outside the sandbox
+  (troubleshooting, "Git Bash stops with 0xC0000022 on Windows").
 
 Below, `checkup.sh` and `save.sh` mean those scripts run this way.
 
