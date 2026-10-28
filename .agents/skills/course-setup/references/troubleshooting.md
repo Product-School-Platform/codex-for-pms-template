@@ -31,9 +31,10 @@ repo are as they were.
 1. Run the same command again outside the sandbox: ask for approval on the
    first try, with a short plain justification such as "Save your work to
    GitHub?". On Windows, always run Git Bash this way from then on.
-2. If the student declined the approval, tell them: "Codex needs your OK to
-   run this step outside its sandbox. I'll ask again, so please approve it."
-   Then ask again.
+2. If the student declined the approval, tell them: "I need your OK to run
+   this step outside my sandbox. I'll ask once more, so please approve it."
+   Then ask once more. If they decline again, stop and give them step 3's
+   Slack message.
 3. If it stops with the same error even though it ran outside the sandbox,
    tell the student to post in their course Slack channel: what they were
    trying to do, the exact error line, and that they're on Windows.

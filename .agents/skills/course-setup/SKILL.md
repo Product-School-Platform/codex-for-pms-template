@@ -86,7 +86,9 @@ which your sandbox blocks. They print `KEY=value` lines for you to read.
   `couldn't create signal pipe, Win32 error 5`, with no `KEY=value` lines,
   means Git Bash was started inside the sandbox and the script never ran.
   That result doesn't count either: run it again outside the sandbox
-  (troubleshooting, "Git Bash stops with 0xC0000022 on Windows").
+  (troubleshooting, "Git Bash stops with 0xC0000022 on Windows"). If it
+  already ran outside the sandbox and the error comes back, follow step 3
+  of that troubleshooting entry instead of trying again.
 
 Below, `checkup.sh` and `save.sh` mean those scripts run this way.
 
